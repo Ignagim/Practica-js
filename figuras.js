@@ -44,3 +44,22 @@ function areaCirculo(radio){
 } 
 
 console.groupEnd();
+
+
+// Aqui interactuamos con HTML
+
+function calcularPeriometroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert("El perimetro de tu cuadrado de lado " + value + " es: " + perimetro + "cm");
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert("El area de tu cuadrado de lado " + value + " es: " + area + "cm^2");
+}
